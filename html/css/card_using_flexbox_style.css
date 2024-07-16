@@ -1,0 +1,25 @@
+body{
+    background-color: #2d3436;
+    margin: 20%;
+}
+.cards{
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    min-height: 300px;
+}
+.img{
+    border-radius: 50%; 
+    width:90%;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;  
+}
+.paragraph-container{
+    flex:2;
+}
+.image-container{
+    flex-basis: 250px;
+}
+
