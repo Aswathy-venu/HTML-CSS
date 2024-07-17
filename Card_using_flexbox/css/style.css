@@ -5,6 +5,10 @@ h2,h3,p{
     margin: 0;
     padding: 0;
 }
+.main-container{
+    display:flex;
+    gap:20px;
+}
 .cards{
     background-color: white;
     border-radius: 8px;
@@ -13,11 +17,11 @@ h2,h3,p{
     margin: 150px auto ;
 }
 .heading-container{
-    margin:20px;
+    padding-bottom: 15px;
 }
 .img{
     border-radius: 50%; 
-    width:200px;
+    width:160px;
 }
 .card-container{
     display:flex;
@@ -33,4 +37,15 @@ h2,h3,p{
 .image-container{
     flex: 1;
 }
-
+.footer-container{
+  display:flex;
+  justify-content: space-between;
+  
+}
+.click-here-button{
+    background-color:tan;
+    border:0;
+    border-radius:10px;
+    padding: 0 25px;
+    height:40px
+}
