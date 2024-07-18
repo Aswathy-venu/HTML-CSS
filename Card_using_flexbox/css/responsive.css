@@ -1,9 +1,41 @@
 @media(max-width: 1199.98px){
-
+   html{
+    font-size: 16px;
+   }
+   .main-container{
+    display: flex;
+    height:100%; 
 }
-@media(max-width:767.98px){
+   
+}
+@media(max-width:768.98px){
     .main-container{
         display: flex;
         flex-direction: column;
+        height:100%; 
+        padding-bottom: 60%; 
+    }
+    .cards{
+        margin-bottom: 20px;
+        flex: 1 ;  
+    }
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    html{
+        font-size:12px;
     }
 }
+
+@media (max-width: 575.98px) { 
+    html{
+        font-size:12px;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        height:100%; 
+        padding-bottom: 100%; 
+    }
+} 
