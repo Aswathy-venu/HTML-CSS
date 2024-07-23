@@ -2,31 +2,36 @@
     .Carousel {
         display: grid;
         grid-template-columns: 1fr 5fr;
-        grid-template-rows: auto;
         grid-gap: 10px;
         overflow: hidden;
         height: 100vh;
     }
     
  }
- @media(max-width:768.98px){
-    /* .Carousel {
-        display: grid;
-        grid-template-rows: 1fr 5fr ;
-        grid-gap: 10px;
-        overflow: hidden;
-        height: 100vh;
-    } */
-    .nav_gallery{
+ @media (max-width: 768.98px) {
+    .Carousel {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    .gallery {
+        grid-row: 1;
         overflow-y: scroll;
         overflow-x: hidden;
-        display: block;
-        grid-row-start: auto;
-      }
-    
-      a {
+    }
+
+    .nav_gallery {
+        grid-row: 2;
+        overflow-x: scroll;
+        overflow-y: hidden;
         display: flex;
-        min-width: 45vw;
+        flex-direction: row;
+    }
+
+    .nav_gallery a {
+        height: auto;
+        margin-bottom: 0;
         margin-right: 10px;
- }
+    }
 }
+
