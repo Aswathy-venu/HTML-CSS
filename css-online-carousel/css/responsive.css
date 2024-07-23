@@ -1,0 +1,32 @@
+@media(max-width: 1199.98px){
+    .Carousel {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        overflow: hidden;
+        height: 100vh;
+    }
+    
+ }
+ @media(max-width:768.98px){
+    /* .Carousel {
+        display: grid;
+        grid-template-rows: 1fr 5fr ;
+        grid-gap: 10px;
+        overflow: hidden;
+        height: 100vh;
+    } */
+    .nav_gallery{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: block;
+        grid-row-start: auto;
+      }
+    
+      a {
+        display: flex;
+        min-width: 45vw;
+        margin-right: 10px;
+ }
+}

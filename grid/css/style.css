@@ -1,0 +1,12 @@
+.parent-container{
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height:100vh;
+    background-color:orange;
+}
+.grid:nth-child(1) {
+    background-color: rgb(228, 18, 228);
+    grid-column: 1;
+    grid-row:1/4;
+}
