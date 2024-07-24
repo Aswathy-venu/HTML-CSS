@@ -1,0 +1,112 @@
+/* hero-section */
+.hero-content{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height:80vh;
+    justify-items: center;
+    align-items: center;
+    gap:20px;
+}
+.hero-highlight{
+    background-image: url('../assets/images/carousel-3.jpg');
+    background-image: url('../assets/images/carousel-1.jpg');
+    background-image: url('../assets/images/carousel-2.jpg');
+    grid-column: 1;
+    grid-row:1/span2;
+}
+.first-offer{
+    grid-column: 2;
+    grid-row:1/2;
+    background-image: url('../assets/images/offer-1.jpg');
+}
+.second-offer{
+    grid-column: 2;
+    grid-row:2/3;
+    background-image: url('../assets/images/offer-2.jpg');
+}
+.hero-highlight,.first-offer,.second-offer{
+    object-fit: cover;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.btn,.offer-btn{
+    color:white;
+    display:inline-block;
+    padding:10px 20px; 
+    background-color:transparent;
+    border: 1px solid white; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+h3{
+    color:white;
+}
+.offer-btn{
+    background-color: yellow;
+    color:black;
+}
+
+/* strip */
+.strip-heading{
+    font-size:2rem;
+    
+}
+.strip{
+    display:flex;
+    align-items: center;
+}
+.strip-dot{
+    flex:1;
+    border-top: 1px dotted;
+    margin-left: 10px;
+}
+
+/* featured products */
+.featured-product{
+    display:flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center; 
+    justify-items: center;
+    flex-wrap: wrap;
+
+}
+.product-card{
+    width:250px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product-heading{
+    font-size: 1rem;
+    align-items: center;
+    font-weight: 600;
+}
+.strikethrough{
+    color: #6c757d !important;
+    margin-left:10px;
+    text-decoration: line-through;
+}
+.checked {
+    color: orange;
+}
+
+
