@@ -1,0 +1,62 @@
+/* typography using only media query */
+/* h1 {
+    font-size: 2em;
+  }
+h2 {
+    font-size: 1.5em;
+  }
+p {
+    font-size: 1em;
+  }
+@media (min-width: 48rem) {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 2.25em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  } */
+
+
+/* typography using custom property as a multiplier */
+/* :root {
+    --text-multiplier: 1;
+  }
+ @media (min-width: 48rem) {
+    :root {
+      --text-multiplier: 1.5;
+    }
+}
+h1 {
+    font-size: calc(2em * var(--text-multiplier));
+  }
+h2 {
+    font-size: calc(1.5em * var(--text-multiplier));
+  }
+p {
+    font-size: calc(1em * var(--text-multiplier));
+  } */
+   
+
+/* typography using css clamp() function */
+h1, h2, p {
+    font-size: clamp(var(--min), var(--val), var(--max));
+  }
+  h1 {
+    --min: 2em; 
+    --val: 5vw; 
+    --max: 3em; 
+  }
+  h2 {
+    --min: 1.5em;   
+    --val: 4vw;     
+    --max: 2.25em; 
+  }
+  p {
+    --min: 1em;   
+    --val: 2.5vw;
+    --max: 1.5em; 
+  }

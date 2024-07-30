@@ -1,5 +1,5 @@
 /* hero-section starts here */
-.hero-section{
+/* .hero-section{
     display:grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -55,7 +55,7 @@ img{
     max-width:100%;
     height:100%;
     background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 /* .hero-image::before {
   content: "";
   position: absolute;
@@ -66,7 +66,7 @@ img{
   background: rgba(61, 70, 77, 0.5); 
   z-index: 1;
 } */
-.hero-content{
+/* .hero-content{
     position: absolute;
     text-align: center;
     color: #fff;
@@ -137,8 +137,71 @@ h3{
 .offer-btn{
     background-color: yellow;
     color:black;
-}
+} */
 /* hero section ends here */
+
+
+
+/* hero section starts here */
+.hero-section {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "hero-carousel hero-carousel hero-offer-top"
+    "hero-carousel hero-carousel hero-offer-bottom";
+}
+.hero-offer-top{
+  background-image: url('../assets/images/offer-1.jpg');
+  grid-area: hero-offer-top;
+}
+.hero-offer-bottom{
+  grid-area: hero-offer-bottom;
+  background-image: url('../assets/images/offer-2.jpg');
+}
+
+.hero-carousel { 
+  grid-area: hero-carousel;
+  width:100%;
+  height:100%;
+ }
+
+.hero-offer-top ,.hero-offer-bottom, .hero-carousel{
+  object-fit: cover;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  position:relative;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.offer-btn{
+  color: black;
+  background-color: #FFD333;
+  border-color: #FFD333;
+  padding: 8px 8px;
+  margin-top: 20px;
+}
+h3{
+  font-size: calc(1.1rem + 0.6vw);
+}
+h4{
+font-weight: 600;
+}
+.hero-content{
+  position: absolute;
+}
+
+/* hero section ends here */
+
 
 /* strip section starts here */
 .strip-heading{
@@ -169,8 +232,9 @@ h3{
 
 }
 .product-card{
-    width:250px;
+    
     display:flex;
+    flex: 1 1 calc(25% - 23px); 
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -207,10 +271,14 @@ h3{
 /* featured product section ends here */
 
 /* special offers section starts here */
-.offers-content{
-    display:flex;
-    height:40vh;
-    gap:30px;
+
+.special-offer{
+  width:100%;
+ 
+}
+.offer{
+  display: flex;
+  gap:20px;
 }
 /* special offers section ends here */
 
