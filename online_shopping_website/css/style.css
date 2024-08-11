@@ -77,9 +77,6 @@ h3{
 h4{
 font-weight: 600;
 }
-.hero-card{
-  height:100%;
-}
 .hero-content{
   position: absolute;
   display:flex;
@@ -98,6 +95,12 @@ font-weight: 600;
   width:100%;
   height: 100%;
   background: rgba(61, 70, 77, 0.5);
+}
+.bx-wrapper{
+  height:100%;
+}
+.bx-viewport{
+  height: 100%;
 }
 /* hero section ends here */
 
